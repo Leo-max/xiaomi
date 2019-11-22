@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/login.min.css">
+    <title>登录</title>
+    <!-- 设置index.html所有引入.js文件进行模块化开发，遵从AMD规范 -->
+    <script src = 'js/require.js' async = 'true' defer data-main = 'js/login-main'></script>
+
+</head>
+<body>
+    <div class="cardbox">
+        <div class = 'ercode-box'>
+            <a href="" class = 'ercode'></a>
+        </div>
+        <div class="card"> 
+            <div class="head">
+                <a href="index.html"><img src="images/xiaomi.png" alt=""></a>
+                <h4>小米账号登录</h4>
+            </div>
+            <div class="input">
+                <input class="username" type="text" placeholder="邮箱/手机号/小米ID">
+                <input class="password" type="password" placeholder="密码">
+                <div class ="alert_p" style = 'color:orange;'>警告信息</div>
+                <button class="btn-login">登录</button>
+            </div>
+            <a class = 'last-a' href="register.html">
+                <span class = "pro" style = 'color:orange;'>手机短信登录/注册</span>
+                <span class = "nex" style = 'color:rgb(190, 189, 186);'>立刻注册 | 忘记密码？</span>
+            </a>
+            <div class='other'>
+                <div class = 'other-text'>其他方式</div>
+                <div class= 'other-pic'>
+                    <a class = 'icon-type qq' href="/pass/sns/login/auth?appid=100284651&&callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1574048246.986161156%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&sid=miotstore"><i class = 'qq-pic'></i></a>
+                    <a class = 'icon-type weibo' href="/pass/sns/login/auth?appid=2996826273&&callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1574048246.986161156%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&sid=miotstore"><i class = 'weibo-pic'></i></a>
+                    <a class = 'icon-type pay' href="/pass/sns/login/auth?appid=2088011127562160&&callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1574048246.986161156%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&sid=miotstore"><i class = 'pay-pic'></i></a>
+                    <a class = 'icon-type wechat' href="/pass/sns/login/auth?appid=wxxmzh&scope=snsapi_login&callback=https%3A%2F%2Fshopapi.io.mi.com%2Fapp%2Fshop%2Fauth%3Flogid%3D1574048246.986161156%26sign%3Db5353420a9974156016281cb5793f8f8%26followup%3Dhttps%253A%252F%252Fwww.xiaomiyoupin.com%252F&sid=miotstore"><i class = 'weichat'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -24,6 +24,5 @@ require(['nav','Hanimate','list'],function(nav,Hanimate,list){
     nav.HotGoods(),
     nav.Recommend(),
     nav.timerTab(),
-    nav.filterMin(),
     list.shoppCar()
 })

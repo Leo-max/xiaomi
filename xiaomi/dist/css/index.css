@@ -541,7 +541,8 @@ body {
   margin-top: 60px;
   padding-bottom: 28px;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  overflow: hidden; }
   .contentbox2 .content3 .top {
     width: 1080px;
     position: relative;
@@ -599,10 +600,10 @@ body {
     background-position: 0 -1924px;
     background-image: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png); }
   .contentbox2 .content3 .goods {
-    height: 357px;
     margin: 0 auto;
     overflow: hidden;
-    position: relative; }
+    position: absolute;
+    left: 0px; }
     .contentbox2 .content3 .goods a {
       float: left; }
       .contentbox2 .content3 .goods a .c1 {
@@ -610,6 +611,7 @@ body {
         position: relative;
         float: left;
         width: 266px;
+        height: 443px;
         text-align: center;
         background: #fff;
         /* -webkit-transition: all .4s;

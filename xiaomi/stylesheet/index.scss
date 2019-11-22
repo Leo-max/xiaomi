@@ -609,6 +609,7 @@ font-weight: 500; }
     padding-bottom: 28px;
     position: relative;
     z-index: 2; 
+    overflow: hidden;
     .top{
       width:1080px;
       position: relative;
@@ -676,10 +677,10 @@ font-weight: 500; }
   
     }
     .goods{
-      height:357px;
       margin:0 auto;
       overflow: hidden;
-      position: relative;
+      position: absolute;
+      left:0px;
       a{
         float:left;
         .c1{
@@ -687,6 +688,7 @@ font-weight: 500; }
           position: relative;
           float: left;
           width: 266px;
+          height:443px;
           text-align: center;
           background: #fff;
           /* -webkit-transition: all .4s;

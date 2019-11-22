@@ -9,7 +9,7 @@ define(["jquery"],function($){
                 var arr1 = data.dh1;
                 for(var i = 0 ; i <arr1.length ; i++){
                     $(` <li>
-                    <a href="">
+                    <a href="GoodsList.html">
                         <div class="figure">
                             <img src="images/${arr1[i].img}" width="160" height="110">
                         </div>
@@ -21,7 +21,7 @@ define(["jquery"],function($){
                 var arr2 = data.dh2;
                 for(var i = 0;i < arr2.length;i++){
                     $(`<li>
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                                 <div class="figure">
                                     <img src="images/${arr2[i].img}" width="160" height="110">
                                 </div>
@@ -33,7 +33,7 @@ define(["jquery"],function($){
                 var arr3 = data.dh3;
                 for(var i = 0;i < arr3.length;i++){
                     $(`<li>
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                                 <div class="figure">
                                     <img src="images/${arr3[i].img}" width="160" height="110">
                                 </div>
@@ -45,7 +45,7 @@ define(["jquery"],function($){
                 var arr4 = data.dh4;
                 for(var i = 0;i < arr4.length;i++){
                     $(`<li>
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                                 <div class="figure">
                                     <img src="images/${arr4[i].img}" width="160" height="110">
                                 </div>
@@ -57,7 +57,7 @@ define(["jquery"],function($){
                 var arr5 = data.dh5;
                 for(var i = 0;i < arr5.length;i++){
                     $(`<li>
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                                 <div class="figure">
                                     <img src="images/${arr5[i].img}" width="160" height="110">
                                 </div>
@@ -69,7 +69,7 @@ define(["jquery"],function($){
                 var arr6 = data.dh6;
                 for(var i = 0;i < arr6.length;i++){
                     $(`<li>
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                                 <div class="figure">
                                     <img src="images/${arr6[i].img}" width="160" height="110">
                                 </div>
@@ -213,7 +213,7 @@ define(["jquery"],function($){
                 var arr = data.child1;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="images/${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -222,7 +222,7 @@ define(["jquery"],function($){
                 var arr = data.child2;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -231,7 +231,7 @@ define(["jquery"],function($){
                 var arr = data.child3;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -240,7 +240,7 @@ define(["jquery"],function($){
                 var arr = data.child4;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -249,7 +249,7 @@ define(["jquery"],function($){
                 var arr = data.child5;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -258,7 +258,7 @@ define(["jquery"],function($){
                 var arr = data.child6;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -267,7 +267,7 @@ define(["jquery"],function($){
                 var arr = data.child7;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -276,7 +276,7 @@ define(["jquery"],function($){
                 var arr = data.child8;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -285,7 +285,7 @@ define(["jquery"],function($){
                 var arr = data.child9;
                 for(var i = 0;i < arr.length;i++){
                     $( `<li class="wz">
-                            <a href="spxq.html">
+                            <a href="GoodsList.html">
                             <img src="${arr[i].img}" alt="">
                             <span>${arr[i].title}</span></a>
                          </li>
@@ -328,7 +328,7 @@ define(["jquery"],function($){
                 $(".contentbox3 .goods").css("width",arr.length * 266);
 
                 for(var i = 0 ; i < arr.length;i++){
-                    $(`        <a href="">
+                    $(`        <a href="GoodsDetails.html">
                     <div class="c1">
                         <img src="${arr[i].img}" alt="">
                         <div class="m-goods-common-box">
@@ -352,16 +352,20 @@ define(["jquery"],function($){
     //限时购左右切换
     function timerTab(){
 
+        var iNow = 0
+        $(".l").click(function(){
+            iNow++;
+            $(".content3 .goods").animate({left: + 270 * iNow});
 
-        var iNow = 0;
-        var oUl = $(".contentbox2").find(".goods");
-
-        $(".content3 .l").on("click",function(){
-            oUl.animate({left: +266 * iNow},300);
         })
 
-        $(".content3 .r").on("click",function(){
-            oUl.animate({left: +266 * iNow},300);
+        $(".r").click(function(){
+            iNow++;
+            $(".content3 .goods").animate({left: - 270 * iNow});
+            if(iNow == 4){
+                //$(this).animate().stop(true);
+             iNow = -1
+            }
         })
 
     }
@@ -375,7 +379,7 @@ define(["jquery"],function($){
             success:function(data){
                 var arr = data.NewGoods;
                 for(var i = 0  ; i < arr.length;i++){
-                    $(`<a href="">
+                    $(`<a href="GoodsDetails.html">
                     <div class="c1">
                         <img src="${arr[i].img}" alt="">
                         <div class="m-goods-common-box">
@@ -403,7 +407,7 @@ define(["jquery"],function($){
             success:function(data){
                 var arr = data.HotGoods;
                 for(var i = 0  ; i < arr.length;i++){
-                    $(`<a href="">
+                    $(`<a href="GoodsDetails.html">
                     <div class="c1">
                         <img src="${arr[i].img}" alt="">
                         <div class="m-goods-common-box">
@@ -430,7 +434,7 @@ define(["jquery"],function($){
             success:function(data){
                 var arr = data.Recommend;
                 for(var i = 0  ; i < arr.length;i++){
-                    $(`<a href="spxq.html">
+                    $(`<a href="GoodsDetails.html">
                         <div class="t1">
                             <div class="img" >
                                 <div class = 'Min'>${arr[i].Min}</div>
@@ -454,19 +458,19 @@ define(["jquery"],function($){
         })
     }
     //专属推荐商品（三色可选）标签判断
-    function filterMin(){
-        $.ajax({
-            type:"get",
-            url:"data/nav.json",
-            success:function(data){
-                var arr = data.Recommend;
-                alert(arr.Min);
-            },
-            error:function(msg){
-                console.log(msg)
-            }
-        })
-    }
+    // function filterMin(){
+    //     $.ajax({
+    //         type:"get",
+    //         url:"data/nav.json",
+    //         success:function(data){
+    //             var arr = data.Recommend;
+    //             alert(arr.Min);
+    //         },
+    //         error:function(msg){
+    //             console.log(msg)
+    //         }
+    //     })
+    // }
     return{
         dh:dh,
         download:download,
@@ -479,6 +483,5 @@ define(["jquery"],function($){
         HotGoods:HotGoods,
         Recommend:Recommend,
         timerTab:timerTab,
-        filterMin:filterMin
     }
 })

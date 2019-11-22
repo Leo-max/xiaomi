@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        $("[name = items]:checkbox").click(function(){
+            var p = $("[name = items]:checkbox");
+
+            if(p.filter(":checked").length == p.length){
+                $("#check").attr("checked",true);
+            }else{
+                $("#check").attr("checked",false);
+            }
+        })
+    </script>
+</head>
+<body>
+    <form action="">
+        您爱好的运动为：
+        <input type="checkbox" id = 'check' value = '全选/全不选'/>全选/全不选</br>
+        <input type="checkbox" name = 'items' value = '足球'/>足球
+        <input type="checkbox" name = 'item' value = '篮球'/>篮球
+        <input type="checkbox" name = 'item' value = '羽毛球'/>羽毛球
+        <input type="checkbox" name = 'item' value = '乒乓球'/>乒乓球
+    </form>
+</body>
+</html>

@@ -63,17 +63,90 @@ const sass = require("gulp-sass");
 const minifyCSS = require("gulp-minify-css");
 const rename = require("gulp-rename");
 gulp.task("sass", function(){
-    return gulp.src(["stylesheet/index.scss","stylesheet/GoodsList.scss","stylesheet/GoodsDetails.scss"])
+    return gulp.src("stylesheet/index.scss")
     .pipe(sass())
     .pipe(gulp.dest("dist/css"))
     .pipe(minifyCSS())
     .pipe(rename("index.min.css"))
     .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+ 
+})
+
+gulp.task("List-sass", function(){
+    return gulp.src("stylesheet/GoodsList.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
     .pipe(rename("GoodsList.min.css"))
     .pipe(gulp.dest("dist/css"))
-    .pipe(rename("GoodsDetails.min.css"))
+    .pipe(connect.reload());
+ 
+})
+
+gulp.task("Detail-sass", function(){
+    return gulp.src("stylesheet/GoodsDetail.scss")
+    .pipe(sass())
     .pipe(gulp.dest("dist/css"))
-    .pipe(connect.reload())
+    .pipe(minifyCSS())
+    .pipe(rename("GoodsDetail.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+ 
+})
+
+
+gulp.task("login-sass", function(){
+    return gulp.src("stylesheet/login.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("login.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+ 
+})
+
+gulp.task("shoppCar-sass", function(){
+    return gulp.src("stylesheet/shoppCar.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("shoppCar.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+ 
+})
+
+gulp.task("bootstrap-sass", function(){
+    return gulp.src("stylesheet/bootstrap.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("bootstrap.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+ 
+})
+
+gulp.task("button-sass", function(){
+    return gulp.src("stylesheet/button.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("button.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+ 
+})
+gulp.task("register-sass", function(){
+    return gulp.src("stylesheet/register.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("dist/css"))
+    .pipe(minifyCSS())
+    .pipe(rename("register.min.css"))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
  
 })
 /** 
@@ -97,7 +170,7 @@ gulp.task("scripts", function(){
 /*  
     一次性执行多个任务
 */
-gulp.task("build", ["copy-html", "images", "data","sass","scripts"], function(){
+gulp.task("build", ["copy-html", "images", "data","sass","List-sass","Detail-sass","login-sass","shoppCar-sass","bootstrap-sass","button-sass","register-sass","scripts"], function(){
     console.log("项目建立成功");
 })
 
@@ -109,7 +182,14 @@ gulp.task("watch", function(){
     gulp.watch("*.html", ['copy-html']);
     gulp.watch("img/*.{jpg,png}", ["images"]);
     gulp.watch(["xml/*.xml", "json/*.json", "!xml/5.xml"], ['data']);
-    gulp.watch(["stylesheet/index.scss","stylesheet/GoodsList.scss","stylesheet/goodsDetails.scss"], ['sass']);
+    gulp.watch("stylesheet/index.scss", ['sass']);
+    gulp.watch("stylesheet/GoodsList.scss", ['List-sass']);
+    gulp.watch("stylesheet/GoodsDetail.scss", ['Detail-sass']);
+    gulp.watch("stylesheet/login.scss", ['login-sass']);
+    gulp.watch("stylesheet/shoppCar.scss", ['shoppCar-sass']);
+    gulp.watch("stylesheet/bootstrap.scss", ['bootstrap-sass']);
+    gulp.watch("stylesheet/button.scss", ["button-sass"]);
+    gulp.watch("stylesheet/register.scss", ["register-sass"]);
     gulp.watch(["javascript/*.js"], ['scripts']);
 })
 
